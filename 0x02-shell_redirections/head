@@ -1,0 +1,50 @@
+/etc/passwd:1:root:x:0:0:root:/root:/bin/bash
+/etc/passwd:2:daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+/etc/passwd:3:bin:x:2:2:bin:/bin:/usr/sbin/nologin
+/etc/passwd:4:sys:x:3:3:sys:/dev:/usr/sbin/nologin
+/etc/passwd:5:sync:x:4:65534:sync:/bin:/bin/sync
+/etc/passwd:6:games:x:5:60:games:/usr/games:/usr/sbin/nologin
+/etc/passwd:7:man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+/etc/passwd:8:lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+/etc/passwd:9:mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+/etc/passwd:10:news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+/etc/passwd:11:uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+/etc/passwd:12:proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+/etc/passwd:13:www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+/etc/passwd:14:backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+/etc/passwd:15:list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+/etc/passwd:16:irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+/etc/passwd:17:gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+/etc/passwd:18:nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+/etc/passwd:19:_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+/etc/passwd:20:systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+/etc/passwd:21:systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+/etc/passwd:22:systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+/etc/passwd:23:messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+/etc/passwd:24:sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+/etc/passwd:25:mysql:x:106:107:MySQL Server,,,:/var/lib/mysql/:/bin/false
+/etc/passwd:1:root:x:0:0:root:/root:/bin/bash
+/etc/passwd:2:daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+/etc/passwd:3:bin:x:2:2:bin:/bin:/usr/sbin/nologin
+/etc/passwd:4:sys:x:3:3:sys:/dev:/usr/sbin/nologin
+/etc/passwd:5:sync:x:4:65534:sync:/bin:/bin/sync
+/etc/passwd:6:games:x:5:60:games:/usr/games:/usr/sbin/nologin
+/etc/passwd:7:man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+/etc/passwd:8:lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+/etc/passwd:9:mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+/etc/passwd:10:news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+/etc/passwd:11:uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+/etc/passwd:12:proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+/etc/passwd:13:www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+/etc/passwd:14:backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+/etc/passwd:15:list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+/etc/passwd:16:irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+/etc/passwd:17:gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+/etc/passwd:18:nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+/etc/passwd:19:_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+/etc/passwd:20:systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+/etc/passwd:21:systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+/etc/passwd:22:systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+/etc/passwd:23:messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+/etc/passwd:24:sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+/etc/passwd:25:mysql:x:106:107:MySQL Server,,,:/var/lib/mysql/:/bin/false
