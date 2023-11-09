@@ -2,25 +2,42 @@
 # Create a certificate using certbot and configure HAproxy
 # to accept encrypted traffic
 global
-        log /dev/log    local0
-	stats socket /run/haproxy/admin.sock mode 660 level admin
+    log     /dev/log local0
+    maxconn 2048
+    user    haproxy
+    group   haproxy
+    tune.ssl.default-dh-param 2048
 
 defaults
-        log     global
-        mode    http
-        option  httplog
-	timeout connect  10s
-	timeout client  30s
-	timeout server  30s
+    log     global
+    mode    http
+    option  httplog
+    option  dontlognull
+    retries 3
+    option  redispatch
+    timeout connect  5000
+    timeout client  10000
+    timeout server  10000
+    option  forwardfor
+    option  http-server-close
 
-frontend sikholise.tech-frontend
-	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/sikholise.tech.pem
-	http-request redirect scheme https unless { ssl_fc }
-	http-request set-header X-Forwarded-Proto https
-	default_backend sikholise.tech-backend
+frontend www-http
+    bind   0.0.0.0:80
+    reqadd X-Forwarded-Proto:\ http
+    default_backend www-backend
 
-backend sikholise.tech-backend
-	balance roundrobin
-	server 413570-web-01 100.25.132.11:80 check
-	server 413570-web-02 52.91.123.151:80 check
+frontend www-https
+    bind   0.0.0.0:443 ssl crt /etc/haproxy/certs/sikholise.tech.pem
+    reqadd X-Forwarded-Proto:\ https
+    acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
+    use_backend letsencrypt-backend if letsencrypt-acl
+    default_backend www-backend
+
+backend www-backend
+    balance  roundrobin
+    redirect scheme https if !{ ssl_fc }
+    server 413570-web-01 100.25.132.11:80 check
+    server 413570-web-02 52.91.123.151:80 check
+
+backend letsencrypt-backend
+    server letsencrypt 127.0.0.1:54321
