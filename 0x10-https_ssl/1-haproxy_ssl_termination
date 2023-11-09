@@ -22,5 +22,5 @@ frontend sikholise.tech-frontend
 
 backend sikholise.tech-backend
 	balance roundrobin
-	server 443-web-01 100.25.132.11:80 check
-	server 443-web-02 52.91.123.151:80 check
+	server 413570-web-01 100.25.132.11:80 check
+	server 413570-web-02 52.91.123.151:80 check
