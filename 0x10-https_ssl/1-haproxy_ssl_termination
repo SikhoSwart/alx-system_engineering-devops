@@ -38,7 +38,7 @@ defaults
 
 frontend sammykingx.tech
         bind 0:80
-        bind 0:443 ssl crt /etc/ssl/private/sammykingx.tech.pem
+        bind 0:443 ssl crt /etc/ssl/private/sikholise.tech.pem
         http-request redirect scheme https code 301 unless { ssl_fc }
         option forwardfor
         default_backend sikholise.tech_backend
