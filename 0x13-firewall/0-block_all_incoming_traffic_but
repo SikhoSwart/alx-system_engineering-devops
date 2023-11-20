@@ -1,6 +1,5 @@
 #!/bin/bash env
 # install the ufw firewall and setup a few rules on web-01
-ufw default deny incoming
 ufw allow 22/tcp
 ufw allow 443/tcp
 ufw allow 80/tcp
